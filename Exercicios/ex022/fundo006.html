@@ -13,12 +13,22 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /* Shorthand - backgroung
+                color > image > position > repeat > [size] > attachment
+
+                porém o background-size não está aceitando junto
+
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+                background-size: cover;
+            */
         }
 
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +39,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo aperiam nam voluptatum exercitationem, eaque voluptas harum, minus molestias ducimus aspernatur! Natus odio culpa fugit, illum eligendi optio doloribus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sed, distinctio cupiditate quas eligendi quae ullam facere voluptatem recusandae nemo incidunt, quisquam assumenda impedit? Voluptas esse quam corporis placeat et!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At illo aperiam nam voluptatum exercitationem, eaque voluptas harum, minus molestias ducimus aspernatur! Natus odio culpa fugit, illum eligendi optio doloribus et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sed, distinctio cupiditate quas eligendi quae ullam facere voluptatem recusandae nemo incidunt, quisquam assumenda impedit? Voluptas esse quam corporis placeat et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolor, laudantium animi quibusdam quae necessitatibus magnam soluta itaque quisquam ipsa adipisci amet, ipsam rerum at? Error non est mollitia accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex labore aspernatur vitae enim totam iusto placeat molestiae amet, sapiente illum quia, omnis ipsam ad et fugit provident voluptates magnam nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus autem ex cum, placeat temporibus facilis a quaerat impedit veritatis dolor eveniet eos, voluptates provident. Dolorem modi assumenda sed blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iste, exercitationem neque minima temporibus sapiente perspiciatis. Nulla praesentium pariatur molestias fugit odio ea dolores? Rerum ducimus delectus reiciendis quo eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, et! Distinctio iusto molestias dignissimos accusamus voluptate nesciunt deleniti veniam aspernatur, alias nisi fuga optio repudiandae odit recusandae odio laudantium repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste perferendis commodi ratione in rerum, modi voluptatibus facilis unde provident aut aperiam quae nesciunt velit, at illo neque eum laudantium.</p>
     </main>
     
 </body>
