@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,10 +21,27 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: rgb(150, 147, 147);
+            background-color: rgb(71, 69, 69);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(71, 69, 69);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        } /* Pode usar tbm odd e even no lugar de 2n para linhas pares e ímpares. Pode até escolher mais de uma cor. */
 
         td.num {
             text-align: right;
@@ -35,6 +53,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +62,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +181,19 @@
         </tbody>
         <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>210 147 125</strong></td>
                 </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eum excepturi nobis! Et magnam pariatur consectetur eius nisi, nemo ratione aspernatur non est illum vero culpa! Obcaecati nisi praesentium enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt consequatur architecto eos sint, hic dignissimos dicta ipsam suscipit nemo, aliquid totam nisi saepe aut natus sapiente aperiam. Excepturi, maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias quasi expedita laborum exercitationem earum provident ducimus consequuntur ea inventore. Provident officia molestiae odit autem expedita, numquam omnis cupiditate impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quaerat recusandae ipsa, quasi nemo architecto laborum consectetur. Numquam earum voluptates aspernatur voluptatibus iure obcaecati assumenda dolorum nesciunt sint quam.</p> 
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eum excepturi nobis! Et magnam pariatur consectetur eius nisi, nemo ratione aspernatur non est illum vero culpa! Obcaecati nisi praesentium enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt consequatur architecto eos sint, hic dignissimos dicta ipsam suscipit nemo, aliquid totam nisi saepe aut natus sapiente aperiam. Excepturi, maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias quasi expedita laborum exercitationem earum provident ducimus consequuntur ea inventore. Provident officia molestiae odit autem expedita, numquam omnis cupiditate impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quaerat recusandae ipsa, quasi nemo architecto laborum consectetur. Numquam earum voluptates aspernatur voluptatibus iure obcaecati assumenda dolorum nesciunt sint quam.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eum excepturi nobis! Et magnam pariatur consectetur eius nisi, nemo ratione aspernatur non est illum vero culpa! Obcaecati nisi praesentium enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt consequatur architecto eos sint, hic dignissimos dicta ipsam suscipit nemo, aliquid totam nisi saepe aut natus sapiente aperiam. Excepturi, maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias quasi expedita laborum exercitationem earum provident ducimus consequuntur ea inventore. Provident officia molestiae odit autem expedita, numquam omnis cupiditate impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quaerat recusandae ipsa, quasi nemo architecto laborum consectetur. Numquam earum voluptates aspernatur voluptatibus iure obcaecati assumenda dolorum nesciunt sint quam.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eum excepturi nobis! Et magnam pariatur consectetur eius nisi, nemo ratione aspernatur non est illum vero culpa! Obcaecati nisi praesentium enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt consequatur architecto eos sint, hic dignissimos dicta ipsam suscipit nemo, aliquid totam nisi saepe aut natus sapiente aperiam. Excepturi, maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias quasi expedita laborum exercitationem earum provident ducimus consequuntur ea inventore. Provident officia molestiae odit autem expedita, numquam omnis cupiditate impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quaerat recusandae ipsa, quasi nemo architecto laborum consectetur. Numquam earum voluptates aspernatur voluptatibus iure obcaecati assumenda dolorum nesciunt sint quam.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam eum excepturi nobis! Et magnam pariatur consectetur eius nisi, nemo ratione aspernatur non est illum vero culpa! Obcaecati nisi praesentium enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt consequatur architecto eos sint, hic dignissimos dicta ipsam suscipit nemo, aliquid totam nisi saepe aut natus sapiente aperiam. Excepturi, maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci molestias quasi expedita laborum exercitationem earum provident ducimus consequuntur ea inventore. Provident officia molestiae odit autem expedita, numquam omnis cupiditate impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quaerat recusandae ipsa, quasi nemo architecto laborum consectetur. Numquam earum voluptates aspernatur voluptatibus iure obcaecati assumenda dolorum nesciunt sint quam.</p>
 </body>
 </html>
